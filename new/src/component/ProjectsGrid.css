@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap');
+
+.projects-section {
+  margin: 60px auto 48px auto;
+  max-width: 1200px;
+  padding: 0 24px;
+  scroll-margin-top: 250px;
+}
+
+.projects-section h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: #124898;
+  margin-bottom: 32px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project-card {
+  background: none;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(50, 50, 50, 0.10);
+  border: 1.5px solid #e0e0e0;
+  padding: 48px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #323232;
+  font-size: 1.2rem;
+  transition: box-shadow 0.2s, transform 0.2s, border 0.2s;
+  margin-bottom: 8px;
+}
+
+.project-card:hover {
+  box-shadow: 0 12px 40px rgba(229, 64, 79, 0.18);
+  transform: translateY(-6px) scale(1.03);
+  border: 2px solid #E5404F;
+} 
